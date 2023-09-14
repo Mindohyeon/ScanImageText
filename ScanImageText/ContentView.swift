@@ -66,8 +66,7 @@ struct ImageDropView: View {
     }
     
     private func loadImage(from providers: [NSItemProvider]) {
-        guard let provider = providers.first else { return
-        }
+        guard let provider = providers.first else { return }
         
         if provider.hasItemConformingToTypeIdentifier("public.image") {
             provider.loadItem(forTypeIdentifier: "public.image", options: nil) { item, error in
