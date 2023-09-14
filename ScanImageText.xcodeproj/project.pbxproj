@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF46DF3A2AB2D7BB004D521D /* ScanImageTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF392AB2D7BB004D521D /* ScanImageTextApp.swift */; };
+		DF46DF3C2AB2D7BB004D521D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF3B2AB2D7BB004D521D /* ContentView.swift */; };
+		DF46DF3E2AB2D7BD004D521D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF46DF3D2AB2D7BD004D521D /* Assets.xcassets */; };
+		DF46DF412AB2D7BD004D521D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF46DF402AB2D7BD004D521D /* Preview Assets.xcassets */; };
+		DF46DF4C2AB2D7BE004D521D /* ScanImageTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF4B2AB2D7BE004D521D /* ScanImageTextTests.swift */; };
+		DF46DF562AB2D7BE004D521D /* ScanImageTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF552AB2D7BE004D521D /* ScanImageTextUITests.swift */; };
+		DF46DF582AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF572AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift */; };
+		DF46DF652AB2DA18004D521D /* OCRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF642AB2DA18004D521D /* OCRViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF46DF482AB2D7BE004D521D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF46DF2E2AB2D7BB004D521D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF46DF352AB2D7BB004D521D;
+			remoteInfo = ScanImageText;
+		};
+		DF46DF522AB2D7BE004D521D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF46DF2E2AB2D7BB004D521D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF46DF352AB2D7BB004D521D;
+			remoteInfo = ScanImageText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF46DF362AB2D7BB004D521D /* ScanImageText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanImageText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF46DF392AB2D7BB004D521D /* ScanImageTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextApp.swift; sourceTree = "<group>"; };
+		DF46DF3B2AB2D7BB004D521D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF46DF3D2AB2D7BD004D521D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF46DF402AB2D7BD004D521D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF46DF422AB2D7BD004D521D /* ScanImageText.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScanImageText.entitlements; sourceTree = "<group>"; };
+		DF46DF472AB2D7BE004D521D /* ScanImageTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanImageTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF46DF4B2AB2D7BE004D521D /* ScanImageTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextTests.swift; sourceTree = "<group>"; };
+		DF46DF512AB2D7BE004D521D /* ScanImageTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanImageTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF46DF552AB2D7BE004D521D /* ScanImageTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextUITests.swift; sourceTree = "<group>"; };
+		DF46DF572AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF46DF642AB2DA18004D521D /* OCRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF46DF332AB2D7BB004D521D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF442AB2D7BE004D521D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF4E2AB2D7BE004D521D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF46DF2D2AB2D7BB004D521D = {
+			isa = PBXGroup;
+			children = (
+				DF46DF382AB2D7BB004D521D /* ScanImageText */,
+				DF46DF4A2AB2D7BE004D521D /* ScanImageTextTests */,
+				DF46DF542AB2D7BE004D521D /* ScanImageTextUITests */,
+				DF46DF372AB2D7BB004D521D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF46DF372AB2D7BB004D521D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF46DF362AB2D7BB004D521D /* ScanImageText.app */,
+				DF46DF472AB2D7BE004D521D /* ScanImageTextTests.xctest */,
+				DF46DF512AB2D7BE004D521D /* ScanImageTextUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF46DF382AB2D7BB004D521D /* ScanImageText */ = {
+			isa = PBXGroup;
+			children = (
+				DF46DF392AB2D7BB004D521D /* ScanImageTextApp.swift */,
+				DF46DF3B2AB2D7BB004D521D /* ContentView.swift */,
+				DF46DF3D2AB2D7BD004D521D /* Assets.xcassets */,
+				DF46DF422AB2D7BD004D521D /* ScanImageText.entitlements */,
+				DF46DF3F2AB2D7BD004D521D /* Preview Content */,
+				DF46DF642AB2DA18004D521D /* OCRViewModel.swift */,
+			);
+			path = ScanImageText;
+			sourceTree = "<group>";
+		};
+		DF46DF3F2AB2D7BD004D521D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF46DF402AB2D7BD004D521D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF46DF4A2AB2D7BE004D521D /* ScanImageTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF46DF4B2AB2D7BE004D521D /* ScanImageTextTests.swift */,
+			);
+			path = ScanImageTextTests;
+			sourceTree = "<group>";
+		};
+		DF46DF542AB2D7BE004D521D /* ScanImageTextUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF46DF552AB2D7BE004D521D /* ScanImageTextUITests.swift */,
+				DF46DF572AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift */,
+			);
+			path = ScanImageTextUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF46DF352AB2D7BB004D521D /* ScanImageText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF46DF5B2AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageText" */;
+			buildPhases = (
+				DF46DF322AB2D7BB004D521D /* Sources */,
+				DF46DF332AB2D7BB004D521D /* Frameworks */,
+				DF46DF342AB2D7BB004D521D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanImageText;
+			productName = ScanImageText;
+			productReference = DF46DF362AB2D7BB004D521D /* ScanImageText.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF46DF462AB2D7BE004D521D /* ScanImageTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF46DF5E2AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageTextTests" */;
+			buildPhases = (
+				DF46DF432AB2D7BE004D521D /* Sources */,
+				DF46DF442AB2D7BE004D521D /* Frameworks */,
+				DF46DF452AB2D7BE004D521D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF46DF492AB2D7BE004D521D /* PBXTargetDependency */,
+			);
+			name = ScanImageTextTests;
+			productName = ScanImageTextTests;
+			productReference = DF46DF472AB2D7BE004D521D /* ScanImageTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF46DF502AB2D7BE004D521D /* ScanImageTextUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF46DF612AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageTextUITests" */;
+			buildPhases = (
+				DF46DF4D2AB2D7BE004D521D /* Sources */,
+				DF46DF4E2AB2D7BE004D521D /* Frameworks */,
+				DF46DF4F2AB2D7BE004D521D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF46DF532AB2D7BE004D521D /* PBXTargetDependency */,
+			);
+			name = ScanImageTextUITests;
+			productName = ScanImageTextUITests;
+			productReference = DF46DF512AB2D7BE004D521D /* ScanImageTextUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF46DF2E2AB2D7BB004D521D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DF46DF352AB2D7BB004D521D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DF46DF462AB2D7BE004D521D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DF46DF352AB2D7BB004D521D;
+					};
+					DF46DF502AB2D7BE004D521D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DF46DF352AB2D7BB004D521D;
+					};
+				};
+			};
+			buildConfigurationList = DF46DF312AB2D7BB004D521D /* Build configuration list for PBXProject "ScanImageText" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF46DF2D2AB2D7BB004D521D;
+			productRefGroup = DF46DF372AB2D7BB004D521D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF46DF352AB2D7BB004D521D /* ScanImageText */,
+				DF46DF462AB2D7BE004D521D /* ScanImageTextTests */,
+				DF46DF502AB2D7BE004D521D /* ScanImageTextUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF46DF342AB2D7BB004D521D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF46DF412AB2D7BD004D521D /* Preview Assets.xcassets in Resources */,
+				DF46DF3E2AB2D7BD004D521D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF452AB2D7BE004D521D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF4F2AB2D7BE004D521D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF46DF322AB2D7BB004D521D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF46DF652AB2DA18004D521D /* OCRViewModel.swift in Sources */,
+				DF46DF3C2AB2D7BB004D521D /* ContentView.swift in Sources */,
+				DF46DF3A2AB2D7BB004D521D /* ScanImageTextApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF432AB2D7BE004D521D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF46DF4C2AB2D7BE004D521D /* ScanImageTextTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF46DF4D2AB2D7BE004D521D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF46DF582AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift in Sources */,
+				DF46DF562AB2D7BE004D521D /* ScanImageTextUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF46DF492AB2D7BE004D521D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF46DF352AB2D7BB004D521D /* ScanImageText */;
+			targetProxy = DF46DF482AB2D7BE004D521D /* PBXContainerItemProxy */;
+		};
+		DF46DF532AB2D7BE004D521D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF46DF352AB2D7BB004D521D /* ScanImageText */;
+			targetProxy = DF46DF522AB2D7BE004D521D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF46DF592AB2D7BE004D521D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF46DF5A2AB2D7BE004D521D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DF46DF5C2AB2D7BE004D521D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScanImageText/ScanImageText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScanImageText/Preview Content\"";
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DF46DF5D2AB2D7BE004D521D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScanImageText/ScanImageText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScanImageText/Preview Content\"";
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DF46DF5F2AB2D7BE004D521D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanImageText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanImageText";
+			};
+			name = Debug;
+		};
+		DF46DF602AB2D7BE004D521D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanImageText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanImageText";
+			};
+			name = Release;
+		};
+		DF46DF622AB2D7BE004D521D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ScanImageText;
+			};
+			name = Debug;
+		};
+		DF46DF632AB2D7BE004D521D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X52UAWWKMX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dohyeon.ScanImageTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ScanImageText;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF46DF312AB2D7BB004D521D /* Build configuration list for PBXProject "ScanImageText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF46DF592AB2D7BE004D521D /* Debug */,
+				DF46DF5A2AB2D7BE004D521D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF46DF5B2AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF46DF5C2AB2D7BE004D521D /* Debug */,
+				DF46DF5D2AB2D7BE004D521D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF46DF5E2AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF46DF5F2AB2D7BE004D521D /* Debug */,
+				DF46DF602AB2D7BE004D521D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF46DF612AB2D7BE004D521D /* Build configuration list for PBXNativeTarget "ScanImageTextUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF46DF622AB2D7BE004D521D /* Debug */,
+				DF46DF632AB2D7BE004D521D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF46DF2E2AB2D7BB004D521D /* Project object */;
+}
