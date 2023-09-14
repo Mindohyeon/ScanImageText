@@ -15,6 +15,7 @@
 		DF46DF562AB2D7BE004D521D /* ScanImageTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF552AB2D7BE004D521D /* ScanImageTextUITests.swift */; };
 		DF46DF582AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF572AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift */; };
 		DF46DF652AB2DA18004D521D /* OCRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF642AB2DA18004D521D /* OCRViewModel.swift */; };
+		DF46DF672AB31176004D521D /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46DF662AB31176004D521D /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DF46DF552AB2D7BE004D521D /* ScanImageTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextUITests.swift; sourceTree = "<group>"; };
 		DF46DF572AB2D7BE004D521D /* ScanImageTextUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageTextUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DF46DF642AB2DA18004D521D /* OCRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewModel.swift; sourceTree = "<group>"; };
+		DF46DF662AB31176004D521D /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DF46DF422AB2D7BD004D521D /* ScanImageText.entitlements */,
 				DF46DF3F2AB2D7BD004D521D /* Preview Content */,
 				DF46DF642AB2DA18004D521D /* OCRViewModel.swift */,
+				DF46DF662AB31176004D521D /* TextView.swift */,
 			);
 			path = ScanImageText;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF46DF652AB2DA18004D521D /* OCRViewModel.swift in Sources */,
+				DF46DF672AB31176004D521D /* TextView.swift in Sources */,
 				DF46DF3C2AB2D7BB004D521D /* ContentView.swift in Sources */,
 				DF46DF3A2AB2D7BB004D521D /* ScanImageTextApp.swift in Sources */,
 			);
