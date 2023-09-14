@@ -17,21 +17,11 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .foregroundColor(.blue)
             } else {
-                if isHiddenForResultTexts {
-                    TextView(text: $scannedText)
-                        .hidden()
-                        .lineLimit(18)
-                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                        .frame(maxHeight: .infinity)
-                        .fixedSize(horizontal: false, vertical: false)
-                        .font(.body)
-                        .multilineTextAlignment(.center)
-                        .disabled(true)
-                } else {
+                if !isHiddenForResultTexts {
                     TextView(text: $scannedText)
                         .scaledToFit()
-                        .font(.headline)
-                        .lineLimit(18)
+                        .font(.body)
+                        .lineLimit(nil)
                         .frame(maxHeight: .infinity)
                         .fixedSize(horizontal: false, vertical: false)
                         .font(.body)
