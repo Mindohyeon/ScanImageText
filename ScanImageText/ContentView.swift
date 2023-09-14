@@ -59,8 +59,10 @@ struct ImageDropView: View {
         guard let provider = providers.first else { return }
         
         if provider.hasItemConformingToTypeIdentifier("public.image") {
-            provider.loadItem(forTypeIdentifier: "public.image", options: nil) { item, error in
-                if let url = item as? URL, let image = NSImage(contentsOf: url) {
+            provider.loadItem(forTypeIdentifier: "public.image",
+                              options: nil) { item, error in
+                if let url = item as? URL,
+                   let image = NSImage(contentsOf: url) {
                     DispatchQueue.main.async {
                         self.isScanning = true
                         self.scannedText = ""
@@ -72,11 +74,18 @@ struct ImageDropView: View {
     }
     
     private func recognizeTextInImage(_ image: NSImage) {
-        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
+        guard let cgImage = image.cgImage(
+            forProposedRect: nil,
+            context: nil,
+            hints: nil
+        ) else {
             return
         }
         
-        let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        let requestHandler = VNImageRequestHandler(
+            cgImage: cgImage,
+            options: [:]
+        )
         let request = VNRecognizeTextRequest { (request, error) in
             if let error = error {
                 print("텍스트 인식 오류: \(error.localizedDescription)")
@@ -103,9 +112,6 @@ struct ImageDropView: View {
         
         /// 언어를 인식하는 우선순위 설정
         if #available(iOS 16.0, *) {
-            /// 앱의 지원 버전에 따라 가장 최신 revision을 default로 지원해주기 떄문에
-            /// 사실 안해도 상관 없다...
-            /// VNRecognizeTextRequestRevision3는 iOS 16부터 지원
             request.revision = VNRecognizeTextRequestRevision3
             request.recognitionLanguages = ["ko-KR"]
         } else {
