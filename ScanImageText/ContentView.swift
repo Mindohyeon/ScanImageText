@@ -16,16 +16,19 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .foregroundColor(.blue)
             } else {
-                Button {
-                    pasteboard.clearContents()
-                    pasteboard.setString(scannedText, forType: .string)
-                    
-                    completedScanneText = "클립보드에 저장되었습니다."
-                } label: {
-                    Text(scannedText)
-                }
-                .font(.body)
+//                Button {
+//                    pasteboard.clearContents()
+//                    pasteboard.setString(scannedText, forType: .string)
+//
+//                    completedScanneText = "클립보드에 저장되었습니다."
+//                } label: {
+//                    Text(scannedText)
+//                }
+                Text(scannedText)
+                .lineLimit(nil)
                 .frame(maxHeight: .infinity)
+                .fixedSize(horizontal: false, vertical: false)
+                .font(.body)
                 .multilineTextAlignment(.center)
             }
             Text(completedScanneText)
@@ -54,7 +57,7 @@ struct ImageDropView: View {
                     self.loadImage(from: providers)
                     return true
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 
