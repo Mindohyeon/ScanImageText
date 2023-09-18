@@ -19,15 +19,15 @@ struct ContentView: View {
             } else {
                 if !isHiddenForResultTexts {
                     TextView(text: $scannedText)
-                        .scaledToFit()
+                        .foregroundColor(.white)
                         .font(.body)
-                        .lineLimit(nil)
                         .frame(maxHeight: .infinity)
                         .fixedSize(horizontal: false, vertical: false)
-                        .font(.body)
                         .multilineTextAlignment(.center)
+                        .layoutPriority(1)
                 }
             }
+            
             ImageDropView(scannedText: $scannedText, isScanning: $isScanning, isHiddenForResultTexts: $isHiddenForResultTexts)
                 .frame(maxWidth: 300, maxHeight: 200)
         }
@@ -59,14 +59,13 @@ struct ImageDropView: View {
         guard let provider = providers.first else { return }
         
         if provider.hasItemConformingToTypeIdentifier("public.image") {
-            provider.loadItem(forTypeIdentifier: "public.image",
-                              options: nil) { item, error in
+            provider.loadItem(forTypeIdentifier: "public.image") { item, error in
                 if let url = item as? URL,
                    let image = NSImage(contentsOf: url) {
-                    DispatchQueue.main.async {
+                    Task {
                         self.isScanning = true
                         self.scannedText = ""
-                        self.recognizeTextInImage(image)
+                        await recognizeTextInImage(image)
                     }
                 }
             }
