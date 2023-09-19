@@ -65,7 +65,7 @@ struct ImageDropView: View {
                     Task {
                         self.isScanning = true
                         self.scannedText = ""
-                        await recognizeTextInImage(image)
+                        recognizeTextInImage(image)
                     }
                 }
             }
@@ -102,7 +102,6 @@ struct ImageDropView: View {
             }
             
             DispatchQueue.main.async {
-                print(recognizedText)
                 self.scannedText = recognizedText
                 self.isScanning = false
                 self.isHiddenForResultTexts = false
