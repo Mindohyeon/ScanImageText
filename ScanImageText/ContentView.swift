@@ -116,7 +116,7 @@ struct ImageDropView: View {
         } else {
             request.recognitionLanguages = ["en-US"]
         }
-        /// 정확도와 속도 중 어느 것을 중점적으로 처리할 것인지
+        /// 정확도 우선
         request.recognitionLevel = .accurate
         /// 언어를 인식하고 수정하는 과정을 거침.
         request.usesLanguageCorrection = true
