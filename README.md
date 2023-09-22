@@ -10,6 +10,8 @@
 
 추출된 텍스트는 **수정 & 복사**가 가능합니다.
 
+<img width="500" alt="스크린샷 2023-09-22 오후 12 25 23" src="https://github.com/Mindohyeon/ScanImageText/assets/81687906/3998ac36-a99b-40bb-b9a5-751b8fb700c3">
+
 
 ### Skill
 - VisionKit
