@@ -29,8 +29,10 @@ struct ContentView: View {
                 }
             }
             
-            ImageDropView(scannedText: $scannedText, isScanning: $isScanning, isHiddenForResultTexts: $isHiddenForResultTexts)
-                .frame(maxWidth: 300, maxHeight: 200)
+            ImageDropView(scannedText: $scannedText,
+                          isScanning: $isScanning,
+                          isHiddenForResultTexts: $isHiddenForResultTexts)
+            .frame(maxWidth: 300, maxHeight: 200)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
