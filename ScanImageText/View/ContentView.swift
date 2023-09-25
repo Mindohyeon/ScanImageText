@@ -6,7 +6,6 @@ import CoreImage
 struct ContentView: View {
     @State private var scannedText: String = ""
     @State private var isScanning: Bool = false
-    @State private var completedScanneText: String = ""
     @State private var isHiddenForResultTexts: Bool = true
     
     private let pasteboard = NSPasteboard.general
