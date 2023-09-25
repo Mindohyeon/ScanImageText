@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 import Vision
 import CoreImage
 
@@ -40,7 +41,7 @@ struct ImageDropView: View {
     @Binding var isScanning: Bool
     @Binding var isHiddenForResultTexts: Bool
     
-    let viewModel = LoadImageViewModel()
+    @ObservedObject var viewModel = LoadImageViewModel()
     
     var body: some View {
         VStack {
@@ -67,10 +68,14 @@ struct ImageDropView: View {
                     self.isScanning = true
                     self.scannedText = ""
                     
-                    viewModel.recognizeTextInImage(image) { recognizedText in
-                        self.scannedText = recognizedText
-                        self.isScanning = false
-                        self.isHiddenForResultTexts = false
+                    viewModel.action(.dragDropImageButton(image: image))
+                    switch viewModel.state {
+                    case .resultText(let recognizedText):
+                        DispatchQueue.main.async {
+                            scannedText = recognizedText
+                            isScanning = false
+                            isHiddenForResultTexts = false
+                        }
                     }
                 }
             }

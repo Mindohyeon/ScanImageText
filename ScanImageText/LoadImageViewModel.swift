@@ -2,21 +2,54 @@ import Foundation
 import AppKit
 import Vision
 import CoreImage
+import Combine
 
-class LoadImageViewModel {
-    func recognizeTextInImage(_ image: NSImage, completion: @escaping (String) -> Void) {
+protocol ViewModelable: ObservableObject {
+  associatedtype Action
+  associatedtype State
+  
+  var state: State { get }
+  
+  func action(_ action: Action)
+}
+
+class LoadImageViewModel: ViewModelable {
+    @Published var state: State
+    
+    func action(_ action: Action) {
+        switch action {
+        case .dragDropImageButton(let image):
+            state = .resultText(recognizeTextInImage(image))
+        }
+    }
+    
+    enum Action {
+        case dragDropImageButton(image: NSImage)
+    }
+    
+    enum State {
+        case resultText(String)
+    }
+    
+    init() {
+        self.state = .resultText("")
+    }
+    
+    func recognizeTextInImage(_ image: NSImage) -> String {
         guard let cgImage = image.cgImage(
             forProposedRect: nil,
             context: nil,
             hints: nil
         ) else {
-            return
+            return ""
         }
         
         let requestHandler = VNImageRequestHandler(
             cgImage: cgImage,
             options: [:]
         )
+        var recognizedText = ""
+        
         let request = VNRecognizeTextRequest { (request, error) in
             if let error = error {
                 print("텍스트 인식 오류: \(error.localizedDescription)")
@@ -27,14 +60,9 @@ class LoadImageViewModel {
                 return
             }
             
-            var recognizedText = ""
             for observation in observations {
                 guard let topCandidate = observation.topCandidates(1).first else { continue }
                 recognizedText += topCandidate.string + "\n"
-            }
-            
-            DispatchQueue.main.async {
-                completion(recognizedText)
             }
         }
         
@@ -55,5 +83,7 @@ class LoadImageViewModel {
         } catch {
             print("텍스트 인식 오류: \(error.localizedDescription)")
         }
+        
+        return recognizedText
     }
 }
