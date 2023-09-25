@@ -16,13 +16,6 @@ protocol ViewModelable: ObservableObject {
 class LoadImageViewModel: ViewModelable {
     @Published var state: State
     
-    func action(_ action: Action) {
-        switch action {
-        case .dragDropImageButton(let image):
-            state = .resultText(recognizeTextInImage(image))
-        }
-    }
-    
     enum Action {
         case dragDropImageButton(image: NSImage)
     }
@@ -33,6 +26,13 @@ class LoadImageViewModel: ViewModelable {
     
     init() {
         self.state = .resultText("")
+    }
+    
+    func action(_ action: Action) {
+        switch action {
+        case .dragDropImageButton(let image):
+            state = .resultText(recognizeTextInImage(image))
+        }
     }
     
     func recognizeTextInImage(_ image: NSImage) -> String {
