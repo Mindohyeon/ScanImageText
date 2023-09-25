@@ -71,15 +71,19 @@ struct ImageDropView: View {
                     self.scannedText = ""
                     
                     viewModel.action(.dragDropImageButton(image: image))
-                    switch viewModel.state {
-                    case .resultText(let recognizedText):
-                        DispatchQueue.main.async {
-                            scannedText = recognizedText
-                            isScanning = false
-                            isHiddenForResultTexts = false
-                        }
-                    }
+                    bindSate()
                 }
+            }
+        }
+    }
+    
+    private func bindSate() {
+        switch viewModel.state {
+        case .resultText(let recognizedText):
+            DispatchQueue.main.async {
+                scannedText = recognizedText
+                isScanning = false
+                isHiddenForResultTexts = false
             }
         }
     }
