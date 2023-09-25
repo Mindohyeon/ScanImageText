@@ -1,7 +1,6 @@
 import SwiftUI
 import Combine
 import Vision
-import CoreImage
 
 struct ContentView: View {
     @State private var scannedText: String = ""

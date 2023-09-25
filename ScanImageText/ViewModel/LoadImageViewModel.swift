@@ -1,7 +1,6 @@
 import Foundation
 import AppKit
 import Vision
-import CoreImage
 import Combine
 
 protocol ViewModelable: ObservableObject {
