@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 import Vision
 
-struct ContentView: View {
+struct ScanImageView: View {
     @State private var scannedText: String = ""
     @State private var isScanning: Bool = false
     @State private var isHiddenForResultTexts: Bool = true
@@ -91,6 +91,6 @@ struct ImageDropView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ScanImageView()
     }
 }

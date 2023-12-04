@@ -13,7 +13,7 @@ struct WelcomeView: View {
             .padding()
             
             
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: ScanImageView()) {
                 Text("Drag & Drop")
                     .tint(.white)
                     .font(.title)
