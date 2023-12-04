@@ -4,7 +4,9 @@ import SwiftUI
 struct ScanImageTextApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                WelcomeView()
+            }
         }
     }
 }

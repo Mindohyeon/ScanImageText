@@ -12,16 +12,17 @@ struct WelcomeView: View {
             }
             .padding()
             
-            Button {
-                
-            } label: {
+            
+            NavigationLink(destination: ContentView()) {
                 Text("Drag & Drop")
+                    .tint(.white)
                     .font(.title)
                     .frame(width: 200, height: 100)
+                    .padding()
             }
-            .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
 }
 
