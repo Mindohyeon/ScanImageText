@@ -1,7 +1,6 @@
 import Foundation
 import AppKit
 import Vision
-import Combine
 
 protocol ViewModelable: ObservableObject {
   associatedtype Action
@@ -47,6 +46,7 @@ class LoadImageViewModel: ViewModelable {
             cgImage: cgImage,
             options: [:]
         )
+        
         var recognizedText = ""
         
         let request = VNRecognizeTextRequest { (request, error) in
