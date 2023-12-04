@@ -3,15 +3,13 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         HStack {
-            Button {
-                
-            } label: {
+            NavigationLink(destination: CameraView()) {
                 Text("Camera")
+                    .tint(.white)
                     .font(.title)
                     .frame(width: 200, height: 100)
+                    .padding()
             }
-            .padding()
-            
             
             NavigationLink(destination: ScanImageView()) {
                 Text("Drag & Drop")
