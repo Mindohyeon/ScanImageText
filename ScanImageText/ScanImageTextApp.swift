@@ -3,7 +3,7 @@ import SwiftUI
 @main
 struct ScanImageTextApp: App {
     private var settings: UserSettings = UserSettings.init()
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationStack {

@@ -9,16 +9,12 @@ struct CameraView: View {
     }
     
     var body: some View {
-        VStack {
-            
         PlayerContainerView(captureSession: viewModel.captureSession,
                             settings: settings)
-            .clipShape(Circle())
-        }
+            .clipShape(shape)
     }
     
     var shape: some Shape {
-        print("fasdf")
         switch settings.shape {
         case .circle:
             return AnyShape(Circle())
@@ -26,6 +22,21 @@ struct CameraView: View {
             return AnyShape(RoundedRectangle(cornerRadius: 25.0))
         }
     }
+}
+
+struct AnyShape: Shape {
+    init<S: Shape>(_ wrapped: S) {
+        _path = { rect in
+            let path = wrapped.path(in: rect)
+            return path
+        }
+    }
+
+    func path(in rect: CGRect) -> Path {
+        return _path(rect)
+    }
+
+    private let _path: (CGRect) -> Path
 }
 
 #Preview {
