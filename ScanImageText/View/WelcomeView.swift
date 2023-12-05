@@ -2,9 +2,12 @@ import SwiftUI
 
 struct WelcomeView: View {
     @EnvironmentObject var settings: UserSettings
+    
     var body: some View {
         HStack {
-            NavigationLink(destination: CameraView().environmentObject(settings)) {
+            NavigationLink(
+                destination: CameraView().environmentObject(settings)
+            ) {
                 Text("Camera")
                     .tint(.white)
                     .font(.title)

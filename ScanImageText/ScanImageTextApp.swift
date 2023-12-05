@@ -13,7 +13,6 @@ struct ScanImageTextApp: App {
         }
         MenuBarExtra("", systemImage: "text.alignleft") {
             Button("Rectangle Shape") {
-                print("Hi")
                 settings.shape = .rectangle
             }
             Button("Circle Shape") {
@@ -21,6 +20,12 @@ struct ScanImageTextApp: App {
             }
             Button("Mirror camera") {
                 settings.isMirroring.toggle()
+            }
+            
+            Divider()
+            
+            Button("Quick") {
+                exit(0)
             }
         }
     }

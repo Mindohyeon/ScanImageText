@@ -9,12 +9,16 @@ struct CameraView: View {
     }
     
     var body: some View {
+        VStack {
+            
         PlayerContainerView(captureSession: viewModel.captureSession,
                             settings: settings)
             .clipShape(Circle())
+        }
     }
     
     var shape: some Shape {
+        print("fasdf")
         switch settings.shape {
         case .circle:
             return AnyShape(Circle())
