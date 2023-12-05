@@ -24,7 +24,7 @@ struct ScanImageTextApp: App {
             
             Divider()
             
-            Button("Quick") {
+            Button("Quit") {
                 exit(0)
             }
         }
