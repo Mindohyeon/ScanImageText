@@ -1,10 +1,3 @@
-//
-//  ContentViewModel.swift
-//  ScanImageText
-//
-//  Created by 민도현 on 12/4/23.
-//
-
 import SwiftUI
 import AVFoundation
 import Combine
@@ -36,8 +29,10 @@ class ContentViewModel: ObservableObject {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             case .authorized: // The user has previously granted access to the camera.
                 self.isGranted = true
+                print("Authorized")
 
             case .notDetermined: // The user has not yet been asked for camera access.
+                print("notDetermined")
                 AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
                     if granted {
                         DispatchQueue.main.async {
@@ -48,6 +43,7 @@ class ContentViewModel: ObservableObject {
 
             case .denied: // The user has previously denied access.
                 self.isGranted = false
+                print("Denied")
                 return
 
             case .restricted: // The user can't grant access due to restrictions.
