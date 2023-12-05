@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CameraView: View {
     @ObservedObject var viewModel = ContentViewModel()
+    
     init() {
         viewModel.checkAuthorization()
     }
