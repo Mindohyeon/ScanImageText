@@ -1,11 +1,6 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @ObservedObject var viewModel = ContentViewModel()
-    init() {
-        viewModel.checkAuthorization()
-    }
-    
     var body: some View {
         HStack {
             NavigationLink(destination: CameraView()) {
@@ -23,9 +18,6 @@ struct WelcomeView: View {
                     .frame(width: 200, height: 100)
                     .padding()
             }
-            
-            PlayerContainerView(captureSession: viewModel.captureSession)
-                .clipShape(Circle())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         
